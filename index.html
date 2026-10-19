@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2a1226">
+<title>For Jui ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="fx" aria-hidden="true"></div>
+
+<!-- MUSIC: file must be at assets/our-song.mp3 -->
+<audio id="song" src="assets/our-song.mp3" preload="none"></audio>
+<div id="player" role="group" aria-label="Music player">
+  <button id="playBtn" aria-label="Play our song">▶</button>
+  <span id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  <button id="muteBtn" aria-label="Mute">♪</button>
+  <button id="loopBtn" aria-pressed="false" aria-label="Loop song">↻</button>
+  <span id="musicMsg" role="status">Tap ▶ to play our song</span>
+</div>
+
+<section id="hero" class="screen">
+  <div class="garden" data-lilies="9"></div>
+  <div class="heroText">
+    <h1>BAUNIIIIII MERIII JAAANUUU ♡</h1>
+    <p class="sub">a little universe made just for you</p>
+    <button class="cta" id="openBtn">Open your little surprise ♡</button>
+  </div>
+</section>
+
+<section id="letterSec" class="screen">
+  <div class="garden low" data-lilies="6"></div>
+  <p class="hint">tap the envelope</p>
+  <button id="envelope" class="envelope" aria-label="Open the letter">
+    <span class="flap"></span><span class="pocket"></span>
+    <span class="seal">♡</span>
+    <span class="etext">A letter from your jaanuuu ♡</span>
+  </button>
+  <article id="paper" class="paper" hidden>
+    <div class="paperInner" id="letterBody"></div>
+  </article>
+</section>
+
+<section id="gardenSec" class="screen">
+  <h2>our little garden</h2>
+  <p class="hint">tap a lily</p>
+  <div id="play" class="garden tall"></div>
+  <div id="toast" role="status"></div>
+</section>
+
+
+
+<section id="bday" class="screen">
+  <div id="revealBox" hidden>
+    <h2 class="big">HAPPY BIRTHDAY, MY BAUNIIIIII ♡</h2>
+    <button class="cta" id="wishBtn">Tap for your birthday wish ♡</button>
+    <p id="wish" class="wish" hidden></p>
+  </div>
+</section>
+
+<section id="final" class="screen">
+  <div class="garden" data-lilies="11"></div>
+  <p class="finalMsg">no matter how far we are, you will always have a special place in my heart ♡</p>
+  <p class="signoff">made with all my love, for BAUNIIIIII MERIII JAAANUUU</p>
+</section>
+
+<!-- ============ YOUR LETTER GOES HERE ============
+Paste your complete original letter between the tags below, exactly as written.
+Don't edit anything else. Line breaks are kept as-is. (Avoid the text "</script>" inside it.) -->
+<script type="text/plain" id="letterSource">
+BAUNIIII KAAAAAA BADDEEEEEEEEE
+HAPPPYYYYYYYY WALAAAAAA BADDDEEEEEEEEE MERIII BAUNIIII ILYYYSSSMMMMMMMM JAAAAANUUUUUUU MERAAAA BAUNAAAA BABUUUUU YOU'REEEEEE THEEE BESTT BIWIII IN THE WHOLEEEEE UNIVERSEEEEE ILYYYYYSSSMMMMMM SMMMMMMM MOSTESTTTTT
+IDKKK BAUNIII HOW CAN I LOVEE UU LIKE THISS LIKE BROOO ITSS SOOO MUCHHHH SOMETHING SOMETHING FOO YOOO YRR I NEVERRE THOUGHT DAT I COULD LOVE ANYONE LIKE THISS BUT IDKKK I LOVEEE YOUU MORE THAN ANYTHING LIKE I CANT EVEN LIVE WITHOUT YOU YRR JAAANUUUU AM NOTHING WHITHOUT YOUUU YOU'RE JUST EVERYTHING FORRR MEEE EVERYTHINGGG ILYYYSSSMMMM YRRRR YOU MADE MEEE BETTER JAAANUUUUUUU
+SOMETIMESSS I JUSTT SIT AND THINK BOUT USSS LIKEEEE BROOO I YKWWWWWW  WHENN YOU WERE NOT MY GFF NAA I TOLD EVERYONE DAT I GOT A GFFF !!!!😭
+AND THEN DAY BY DAY IDKK HOW AN INTERNAL FORCE STARDED PULLING ME TOWARDS YAA BAUNIIII !!!! YOUUUU FEEELLL LIKEEEEE HOMEEEEE YRRRR I CAN BEEE MEEEE WWW YOUUU I DON'T HAVE TOO ACTTT IN FRONT YOUUUU AM JUSTT MEEEEEE REALLL MEEE W YOUUUU CANN DOOO EVERYTHING SILLYYY WW YOUUUUU JAAANUUUUUU !!!!!
+AMM SOO HAPPPYYY TODAYYY BAUNIII!!!!!!!!!!!!!!!!💋💋💋
+YRRRR I LOVEEE HOWW WEEEE BOTHH AREE JUSTT GOATED TOGETHER LIKEEEEE JSSS GOATEDDDD BANCHOOOOO I JSSSSS THINKKK ABTTT HOWWW LUCCCCKKIIIII I AMMMM KIIII BAUNIIII ISSSSS MYY BIWIIIIIII YEEE 25 BALLSSS WALII BAUNIIII GOATEDDDD BAUNIIIII BROOO PRETTIESTTTTTT GURLLLLL EVERRRRRE EXISTEDDDD MYYY JAANNUUUUUU ISSS THEEEE BESTTTTTTTTEEESTT GURLLLLL YRRRR ILYYYSSSSMMMMMM BROOO YOU'REEE SOOO KACCCCHIII GEEELIIIII JAAAANUUUUUU ILYYYSSSMMMM!!!!!!!!!!
+I LOVEEEE EVRYTHING ABOUTTT YOOO YRRR I JUSSSS FWWWW YOURR VOICEEEE JSSS WANNAAA CALLLL YOOO 24/7 THEEE TEASSSSSS BHAIIIII I LOVEEEE ITT WHENN AAAPP TEAAA DETEEEE HOWWWWWW BHAIIII AAAPPP YAAPPIINGGG KRTEEE TIMEEEE KITTEEEE PYAREEEEEE LGTEEEE HOWWWW AAPPPP MERII JAAAAANUUUUU HOWWW YRRRR MERAAAA BAUNAAAA JAAAANUUUUUUU 😖🤍
+BAUNIII YRRRRRR MERAAAAA BACCHAAA ILYYSSSMMMMM YKKK YOUUU SOOO GOODDD YRR SOOO PERFECTTTTT IDKKK AM CRYING WHILE WRITING DISSS CAUSEEE YOU'RE SOOO PERFECT YOU'RE THE ONE I WISHED FOR YOU'REEE ALWAYSSSS IN MY PRAYERS AMM JUSS IDKK OBSESSED W YAA THERE'S A LOT OF LOVEE FORR YOU IN MY HEARTTT JAAANUUUU ILYYYSSSSMMMMMM BACCHAAAAA YOU'REEE BESTESTTTTT EVAHHHHHH
+BROOO I JUSS WNNAAA GIVEEEEE YOUUUU EVERYTHING YOU WISHHHH FORRRR I JUSSSS WNNAAA SEEE UUUU HAPPYYYYY ALWAYSSSSS JAAANUUUUUUU IKKKK ILL MAKEEEEE YOUUU HAPPYYYYY JAANNNUUUU WE'LL BEE THEEEE BESTTT COUPLE IN THEE WORLDDD IKKK ILYYYSSSMMMMM JAANUUUU
+YRRRRR AM NOTTT DAT MUCH HANDSOME MY HAIRS MY FACE EVERYTHING IS SOO MUCHH EWWW IDKK HOW I GOT SOOO LUCKYYYY TOOO HAVEE A GURLL LIKEE YOUUU LIKEEE YOU'RE SOOOO PRETTYYYYYYYYY BAUNIII YOU'RE THEE PRETTIESTTTT GURLLL EVERRRR YOU'RE ALWAYSSSSS THEEEEE BESSTTTT ONEEE FORRR MEEEEE YOURRR EYESSSS OMGGGGG OMGGGG OMGGGGGGGGGGG I COULD JUSSSS DIVEEE
+INTOOO YOUR EYESS ILYYYSSSMMMM YRR
+YOU MATTEERRRR A LOTTT FORR MEEEE JAAANUUUU WITHOUT YOUUU AM JUSTT NOTHINGGG YRRR RIALLYYY AM NOTHINGGGG WITHOUT YOUUU ILYYYSSSMMMM JUIIII MERAAA BACCHAAA ILYYSSSMMMMM
+I JSSSSS WANNA HUGGGG YOUUU TIGHTLYYYYY ANDDD JUSSS AHHH YRRR WANTED TO DO A LOT OF THINGS ON YOUR BADDEE BUTT I CAN DO ONLY FEWW THINGS I HOPEE IT'LL MAKEE YOUU HAPPY JAANUUUU ILYYSSSMMMMM
+ONCEEE AGAINNNNNN HAAAPYYYYYYY BADDEEEEEE BADDDEEEEE MERAAAAAA JAAANUUUUUUUUU HAPPPYYYYYYY BIRTHDAYYYYYYY BABUUUUUUUU ILYYYSSSSSMMMMMMMMMSSSMMMMSMMMMMMMM
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
